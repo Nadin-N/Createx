@@ -1,0 +1,100 @@
+<section class="header">
+  <div class="header__container">
+    <div class="header__box">
+      <nav class="header__nav">
+        <ul class="header__menu-list">
+          <li class="header__menu-item">
+            <a href="./index.html" class="header__menu-link">
+              <img
+                src="./images/common_partials/header/logo-main.svg"
+                alt="logo"
+                class="header__logo"
+            /></a>
+          </li>
+          <li
+            class="header__menu-item mobile-hidden js-modal-item"
+            data-path="about"
+          >
+            <a href="./about.html" class="header__menu-link">About Us</a>
+          </li>
+          <li
+            class="header__menu-item mobile-hidden js-modal-item"
+            data-path="courses"
+          >
+            <a href="./courses.html" class="header__menu-link">Courses</a>
+          </li>
+          <li
+            class="header__menu-item mobile-hidden js-modal-item"
+            data-path="events"
+          >
+            <a href="./events.html" class="header__menu-link">Events</a>
+          </li>
+          <li
+            class="header__menu-item mobile-hidden js-modal-item"
+            data-path="blog"
+          >
+            <a href="./blog.html" class="header__menu-link">Blog</a>
+          </li>
+          <li
+            class="header__menu-item mobile-hidden js-modal-item"
+            data-path="contacts"
+          >
+            <a href="./contacts.html" class="header__menu-link">Contacts</a>
+          </li>
+          <li class="header__menu-item tablet-hidden js-menu-open">
+            <svg class="header__burger-icon" width="30" height="20">
+              <use href="./images/svg-sprite.svg#icon-burger"></use>
+            </svg>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__buttons">
+        <button type="button" class="header__button button button--colored">
+          Get consultation
+        </button>
+        <button type="button" class="header__button button button--icon">
+          <svg class="button__svg" width="20" height="20">
+            <use
+              class="button__icon"
+              href="./images/svg-sprite.svg#icon-profile"
+            ></use>
+          </svg>
+          <p class="button__text">Log in / Register</p>
+        </button>
+      </div>
+    </div>
+    <!-- modal menu -->
+    <div class="modal-menu js-modal-menu is-hidden">
+      <button type="button" class="modal-menu__close js-menu-close">
+        <svg class="modal-menu__icon" width="24" height="24">
+          <use
+            class="modal-menu__cross"
+            href="./images/svg-sprite.svg#icon-close"
+          ></use>
+        </svg>
+      </button>
+      <nav class="modal-menu__nav">
+        <ul class="modal-menu__list">
+          <li class="modal-menu__item js-modal-item" data-path="index">
+            <a href="./index.html" class="modal-menu__link">Home</a>
+          </li>
+          <li class="modal-menu__item js-modal-item" data-path="about">
+            <a href="./about.html" class="modal-menu__link">About Us</a>
+          </li>
+          <li class="modal-menu__item js-modal-item" data-path="courses">
+            <a href="./courses.html" class="modal-menu__link">Courses</a>
+          </li>
+          <li class="modal-menu__item js-modal-item" data-path="events">
+            <a href="./events.html" class="modal-menu__link">Events</a>
+          </li>
+          <li class="modal-menu__item js-modal-item" data-path="blog">
+            <a href="./blog.html" class="modal-menu__link"> Blog</a>
+          </li>
+          <li class="modal-menu__item js-modal-item" data-path="contacts">
+            <a href="./contacts.html" class="modal-menu__link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</section>

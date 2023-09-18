@@ -1,0 +1,22 @@
+:root {
+  --accent-color: #ff3f3a;
+
+  --bg-color-main: #fff;
+  --bg-color-primary: #f4f5f6;
+  --bg-color-secondary: linear-gradient(
+    55.95deg,
+    rgba(255, 64, 58, 0.2) 0%,
+    rgba(247, 94, 5, 0.2) 100%
+  );
+
+  --titles-color: #1e212c;
+  --text-color-main: #424551;
+  --text-color-secondary: #787a80;
+  --text-color-tertiary: #fff;
+  --text-color-four: #d7dadd;
+  --btn-color: linear-gradient(45deg, #ff3f3a 0%, #f75e05 100%);
+  --btn-color-action: #df5404;
+
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+  --time: 250ms;
+}
