@@ -1,0 +1,1 @@
+{"mappings":"gfAAAA,EAAA,S","sources":["src/courses.js"],"sourcesContent":["import './js/common/header';\r\nimport './js/common/footer';\r\n"],"names":["parcelRequire"],"version":3,"file":"courses.95ce936d.js.map"}

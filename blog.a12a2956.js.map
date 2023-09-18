@@ -1,0 +1,1 @@
+{"mappings":"gfAAAA,EAAA,S","sources":["src/blog.js"],"sourcesContent":["import './js/common/header';\r\nimport './js/common/footer';\r\n"],"names":["parcelRequire"],"version":3,"file":"blog.a12a2956.js.map"}

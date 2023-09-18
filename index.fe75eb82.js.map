@@ -1,0 +1,1 @@
+{"mappings":"gfAAAA,EAAA,S","sources":["src/index.js"],"sourcesContent":["import './js/common/header';\r\nimport './js/common/footer';\r\n"],"names":["parcelRequire"],"version":3,"file":"index.fe75eb82.js.map"}

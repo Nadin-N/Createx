@@ -1,0 +1,1 @@
+{"mappings":"gfAAAA,EAAA,S","sources":["src/about.js"],"sourcesContent":["import './js/common/header';\r\nimport './js/common/footer';\r\n"],"names":["parcelRequire"],"version":3,"file":"about.be7575a1.js.map"}
