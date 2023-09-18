@@ -22,12 +22,14 @@
     <link rel="stylesheet" href="./sass/index.scss" />
   </head>
   <body>
-    <include src="./partials/common_partials/header.html"></include>
-    <main>
-      <include src="./partials/events_page/events-list.html"></include>
-      <include src="./partials/common_partials/subscription.html"></include>
-    </main>
-    <include src="./partials/common_partials/footer.html"></include>
+    <div class="wrapper">
+      <include src="./partials/common_partials/header.html"></include>
+      <main>
+        <include src="./partials/events_page/events-list.html"></include>
+        <include src="./partials/common_partials/subscription.html"></include>
+      </main>
+      <include src="./partials/common_partials/footer.html"></include>
+    </div>
     <script type="module" src="./events.js"></script>
   </body>
 </html>

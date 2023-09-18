@@ -1,0 +1,245 @@
+.footer {
+  position: relative;
+  z-index: 2;
+  background-color: var(--bg-color-tertiary);
+
+  // .footer__top
+
+  &__top {
+    padding: 30px 0;
+
+    @include adaptive(tablet) {
+      padding: 80px 0 60px;
+    }
+  }
+
+  // .footer__container
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+
+    @include adaptive(mobile-large) {
+      justify-content: space-between;
+    }
+
+    @include adaptive(tablet) {
+      gap: 80px;
+    }
+  }
+
+  // .footer__column
+
+  &__column {
+    flex-shrink: 0;
+    &:first-child {
+      max-width: 100%;
+      @media (min-width: 838px) {
+        max-width: 279px;
+      }
+    }
+    &:last-child {
+      max-width: 286px;
+      .footer__column-title {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  // .footer__logo
+
+  &__logo {
+    width: 130px;
+    margin-bottom: 24px;
+  }
+
+  // .footer__description
+
+  &__description {
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--text-color-tertiary);
+    opacity: 0.6;
+    margin-bottom: 38px;
+  }
+
+  // .footer__icons-list
+
+  &__icons-list {
+    display: flex;
+    column-gap: 20px;
+  }
+
+  // .footer__icons-item
+
+  &__icons-item:is(:hover, :focus) {
+    & svg {
+      fill: var(--bg-color-main);
+      stroke: none;
+      opacity: 1;
+    }
+  }
+
+  // .footer__icon
+
+  &__icon {
+  }
+
+  // .footer__svg
+
+  &__svg {
+    fill: var(--bg-color-main);
+    opacity: 0.6;
+  }
+
+  // .footer__column-title
+
+  &__column-title {
+    color: var(--text-color-tertiary);
+    opacity: 0.6;
+    margin-bottom: 12px;
+  }
+
+  // .footer__column-list
+
+  &__column-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+  }
+
+  // .footer__column-item
+
+  &__column-item {
+    color: var(--text-color-tertiary);
+    opacity: 0.6;
+    line-height: 1.6;
+  }
+
+  &__column-item--double a {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+  }
+
+  // .footer__column-note
+
+  &__column-note {
+    font-size: 10px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  // .footer__bottom
+
+  &__bottom {
+    padding: 20px 0;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+
+  // .footer__copy
+
+  &__copy {
+    display: flex;
+    gap: 4px;
+    font-size: 11px;
+    line-height: 1.5;
+    color: var(--text-color-tertiary);
+    opacity: 0.6;
+
+    .footer__svg {
+      fill: var(--accent-color);
+    }
+
+    @include adaptive(mobile-large) {
+      font-size: 12px;
+    }
+  }
+
+  // .footer__btn
+
+  &__button {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--text-color-tertiary);
+    opacity: 0.6;
+    text-transform: uppercase;
+    &:is(:hover, :focus) {
+      color: var(--accent-color);
+    }
+
+    animation: shakeX 4000ms infinite ease;
+
+    @keyframes shakeX {
+      0% {
+        transform: translateX(-4px);
+      }
+      5% {
+        transform: translateX(4px);
+      }
+      10% {
+        transform: translateX(-3px);
+      }
+      15% {
+        transform: translateX(3px);
+      }
+      20% {
+        transform: translateX(-2px);
+      }
+      25% {
+        transform: translateX(2px);
+      }
+      30% {
+        transform: translateX(0px);
+      }
+      100% {
+        transform: translateX(0px);
+      }
+    }
+  }
+}
+.subscription {
+  position: relative;
+  display: flex;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  margin-bottom: 12px;
+  // .subscription__box
+
+  &__box {
+  }
+
+  // .subscription__input
+
+  &__input {
+    flex-grow: 1;
+    background: rgba(255, 255, 255, 0.001);
+    padding: 9px 12px;
+    color: var(--text-color-tertiary);
+    opacity: 0.6;
+    &::placeholder {
+      font-size: 12px;
+      line-height: 1.5;
+      color: var(--text-color-tertiary);
+      opacity: 0.6;
+    }
+    &:focus::placeholder {
+      opacity: 0;
+    }
+  }
+
+  // .subscription__button
+
+  &__button {
+    position: absolute;
+    top: 55%;
+    right: 5px;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.001);
+    padding: 9px 12px;
+  }
+}

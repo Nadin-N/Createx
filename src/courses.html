@@ -22,14 +22,16 @@
     <link rel="stylesheet" href="./sass/index.scss" />
   </head>
   <body>
-    <include src="./partials/common_partials/header.html"></include>
-    <main>
-      <include src="./partials/courses_page/courses-list.html"></include>
-      <include src="./partials/common_partials/testimonials.html"></include>
-      <include src="./partials/common_partials/certificate.html"></include>
-      <include src="./partials/common_partials/subscription.html"></include>
-    </main>
-    <include src="./partials/common_partials/footer.html"></include>
+    <div class="wrapper">
+      <include src="./partials/common_partials/header.html"></include>
+      <main>
+        <include src="./partials/courses_page/courses-list.html"></include>
+        <include src="./partials/common_partials/testimonials.html"></include>
+        <include src="./partials/common_partials/certificate.html"></include>
+        <include src="./partials/common_partials/subscription.html"></include>
+      </main>
+      <include src="./partials/common_partials/footer.html"></include>
+    </div>
     <script type="module" src="./courses.js"></script>
   </body>
 </html>
