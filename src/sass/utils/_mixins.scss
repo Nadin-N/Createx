@@ -20,7 +20,7 @@
   $mobile: 320px;
   $mobile-large: 480px;
   $tablet: 768px;
-  $desktop: 1260px;
+  $desktop: 1290px;
 
   // mobile from 320 & > infinite
   @if ($type == mobile) {

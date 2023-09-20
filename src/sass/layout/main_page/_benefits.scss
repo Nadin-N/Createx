@@ -1,0 +1,180 @@
+.benefits {
+  margin-bottom: 50px;
+
+  @include adaptive(tablet) {
+    margin-bottom: 80px;
+  }
+
+  @include adaptive(desktop) {
+    margin-bottom: 120px;
+  }
+
+  // .benefits__titles
+
+  &__titles {
+    text-align: center;
+    margin-bottom: 20px;
+    @include adaptive(tablet) {
+      margin-bottom: 60px;
+    }
+  }
+
+  // .benefits__button-box
+
+  &__button-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    margin-bottom: 25px;
+
+    @include adaptive(mobile-large) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include adaptive(tablet) {
+      grid-template-columns: repeat(4, 1fr);
+      margin-bottom: 60px;
+      gap: 1px;
+    }
+    @include adaptive(desktop) {
+      gap: 0px;
+    }
+  }
+
+  // .benefits__tab-button
+
+  &__tab-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 10px 0px;
+    font-weight: 700;
+
+    color: var(--text-color-secondary);
+
+    & p {
+      font-size: 13px;
+      line-height: 1.6;
+      @include adaptive(desktop) {
+        font-size: 16px;
+        line-height: 1.2;
+      }
+    }
+
+    // &:is(:hover, :focus) {
+    //   border: 1px solid var(--text-color-secondary);
+    // }
+
+    @include adaptive(tablet) {
+      border: 1px solid var(--text-color-secondary);
+    }
+
+    @media (min-width: 860px) {
+      border: 1px solid transparent;
+    }
+
+    @include adaptive(desktop) {
+      gap: 8px;
+      line-height: 1.6;
+    }
+  }
+
+  // .benefits__button-svg
+  &__button-svg {
+    fill: var(--text-color-secondary);
+  }
+
+  // .benefits__description-box
+
+  &__description-box {
+  }
+
+  // .benefits__item
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    @include adaptive(tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  // .benefits__info
+
+  &__info {
+    flex: 0 100%;
+    @include adaptive(tablet) {
+      flex: 0 1 43%;
+    }
+    @include adaptive(desktop) {
+      flex: 0 1 41%;
+    }
+  }
+
+  // .benefits__info-title
+
+  &__info-title {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1.3;
+    margin-bottom: 24px;
+    @include adaptive(tablet) {
+      font-size: 26px;
+    }
+    @include adaptive(desktop) {
+      font-size: 32px;
+    }
+  }
+
+  // .benefits__info-text
+
+  &__info-text {
+    font-size: 13px;
+    line-height: 1.3;
+    @include adaptive(desktop) {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+  }
+
+  // .benefits__img
+
+  &__img {
+    position: relative;
+    padding-bottom: 100%;
+    @include adaptive(tablet) {
+      flex: 0 1 55%;
+      padding-bottom: 55%;
+    }
+    @include adaptive(desktop) {
+      flex: 0 1 48.7%;
+      padding-bottom: 48.7%;
+    }
+  }
+
+  &__img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+button.benefits__tab-button.clicked {
+  border: 1px solid var(--accent-color);
+  p {
+    color: var(--accent-color);
+  }
+  svg {
+    fill: var(--accent-color);
+  }
+}
