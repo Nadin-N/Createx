@@ -64,10 +64,6 @@
       }
     }
 
-    // &:is(:hover, :focus) {
-    //   border: 1px solid var(--text-color-secondary);
-    // }
-
     @include adaptive(tablet) {
       border: 1px solid var(--text-color-secondary);
     }
@@ -85,11 +81,6 @@
   // .benefits__button-svg
   &__button-svg {
     fill: var(--text-color-secondary);
-  }
-
-  // .benefits__description-box
-
-  &__description-box {
   }
 
   // .benefits__item
@@ -149,6 +140,7 @@
   &__img {
     position: relative;
     padding-bottom: 100%;
+    max-width: 600px;
     @include adaptive(tablet) {
       flex: 0 1 55%;
       padding-bottom: 55%;
