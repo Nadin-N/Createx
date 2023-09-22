@@ -1,4 +1,5 @@
 import Splide from '@splidejs/splide';
+// import '@splidejs/splide/dist/css/themes/splide.min.css';
 // import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 
 const windowWidth = window.screen.width;
