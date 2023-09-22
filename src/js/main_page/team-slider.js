@@ -1,4 +1,5 @@
-import Splide from '@splidejs/splide';
+// import Splide from '@splidejs/splide';
+import Splide from '../../../node_modules/@splidejs/splide';
 
 const windowWidth = window.screen.width;
 
