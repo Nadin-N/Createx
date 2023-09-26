@@ -1,18 +1,8 @@
-// @import '../../node_modules/swiper/swiper-element-bundle.css';
-
-// @import 'swiper/css';
-// @import 'swiper/css/navigation';
-// @import 'swiper/css/pagination';
-
-.swiper {
-  width: 600px;
-  height: 300px;
-}
-
 .testimonials {
   position: relative;
   background-color: var(--bg-color-primary);
   padding: 15px 0 50px;
+  text-align: center;
 
   @include adaptive(tablet) {
     padding: 15px 0 100px;
@@ -23,11 +13,6 @@
   &__container {
     position: relative;
     z-index: 2;
-  }
-
-  // .testimonials__title
-
-  &__title {
   }
 
   // .testimonials__subtitle
@@ -42,44 +27,42 @@
   // .testimonials__items
 
   &__items {
+    width: 100%;
+    height: auto;
   }
 
   // .testimonials__item
 
   &__item {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-
-    @include adaptive(tablet) {
-      margin-bottom: 60px;
-    }
-  }
-
-  // .testimonials__wrap
-
-  &__item {
-    padding: 65px 105px;
+    align-items: flex-start;
+    gap: 15px;
+    width: 90%;
+    margin-bottom: 40px;
+    padding: 20px 15px;
     background-color: var(--bg-color-main);
     border-radius: 4px;
-    box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03),
-      0px 12px 10px -6px rgba(154, 156, 165, 0.04),
-      0px 30px 24px -10px rgba(154, 156, 165, 0.05),
-      0px 80px 80px -20px rgba(154, 156, 165, 0.08);
-    display: flex;
-    align-items: flex-start;
-    gap: 30px;
+    @include adaptive(mobile-large) {
+      width: 70%;
+    }
+    @include adaptive(tablet) {
+      padding: 30px 30px;
+      margin-bottom: 60px;
+      gap: 30px;
+    }
+    @include adaptive(desktop) {
+      padding: 65px 105px;
+    }
   }
   // .testimonials__svg
 
   &__svg {
+    display: none;
     flex-shrink: 0;
     fill: var(--accent-color);
-  }
-  // .testimonials__box
-
-  &__box {
+    @include adaptive(mobile-large) {
+      display: block;
+    }
   }
 
   // .testimonials__text
@@ -91,9 +74,6 @@
     margin-bottom: 24px;
     @include adaptive(tablet) {
       font-size: 16px;
-    }
-    @include adaptive(desktop) {
-      font-size: 20px;
     }
   }
 
@@ -108,12 +88,8 @@
   // .testimonials__photo
 
   &__photo img {
+    width: 72px;
     border-radius: 50%;
-  }
-
-  // .testimonials__about
-
-  &__about {
   }
 
   // .testimonials__name
@@ -128,32 +104,74 @@
   // .testimonials__position
 
   &__position {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.5;
     color: var(--text-color-secondary);
+    @include adaptive(tablet) {
+      font-size: 14px;
+    }
   }
 
-  // .testimonials__decor
+  div.swiper-button-next.js-testimonials-swiper-button-next,
+  div.swiper-button-prev.js-testimonials-swiper-button-prev {
+    display: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--bg-color-main);
+    &::after {
+      font-size: 24px;
+      font-weight: 700;
 
-  &__decor {
+      color: var(--accent-color);
+    }
+    &:is(:hover, :focus) {
+      background-color: var(--accent-color);
+      &::after {
+        color: var(--bg-color-main);
+      }
+    }
+    @include adaptive(mobile-large) {
+      display: flex;
+    }
+  }
+
+  div.swiper-pagination.js-testimonials-swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal
+    > span {
+    width: 30px;
+    height: 3px;
+    border-radius: 0%;
+  }
+
+  div.testimonials__container
+    > div
+    > div.swiper-pagination.js-testimonials-swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal
+    > span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: var(--accent-color);
   }
 }
 
-.decor-testimonials {
-}
-.decor12 {
-}
 .decor-testimonials--1 {
+  position: absolute;
+  top: 50px;
+  right: 0%;
+  @include adaptive(tablet) {
+    right: 27%;
+  }
 }
-.decor13 {
-}
+
 .decor-testimonials--2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  @include adaptive(tablet) {
+    bottom: 50px;
+    left: 20%;
+  }
 }
-.decor10 {
-}
+
 .decor-testimonials--3 {
-}
-.decor14 {
-}
-.decor-testimonials--4 {
+  position: absolute;
+  bottom: -100px;
+  right: -100px;
 }
