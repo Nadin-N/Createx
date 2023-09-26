@@ -8,7 +8,7 @@ new Splide('.splide', {
   type: 'loop',
   fixedWidth: '285px',
   gap: '30px',
-  speed: (number = 500),
+  speed: 500,
   drag: 'free',
   focus: `${windowWidth > 1320 ? 1 : 'center'}`,
   // autoScroll: {

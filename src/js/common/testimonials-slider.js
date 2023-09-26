@@ -11,7 +11,7 @@ const swiperReviews = new Swiper('.js-testimonials-swiper', {
     delay: 3000,
     disableOnInteraction: false,
   },
-  effect: 'coverflow',
+  // effect: 'coverflow',
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: 'auto',
