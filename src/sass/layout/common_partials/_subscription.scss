@@ -1,0 +1,70 @@
+.subscription-advert {
+  text-align: center;
+  padding: 50px 15px 250px;
+  background: url('../images/common_partials/subscription/subscription-pic.svg')
+      bottom center no-repeat,
+    linear-gradient(
+      55.95deg,
+      rgba(255, 64, 58, 0.2) 0%,
+      rgba(247, 94, 5, 0.2) 100%
+    );
+
+  @include adaptive(tablet) {
+    padding: 80px 15px 250px;
+  }
+  @include adaptive(desktop) {
+    padding: 120px 15px 250px;
+    background: url('../images/common_partials/subscription/subscription-pic.svg')
+        bottom left no-repeat,
+      url('../images/common_partials/subscription/subscription-pic.svg') bottom
+        right no-repeat,
+      linear-gradient(
+        55.95deg,
+        rgba(255, 64, 58, 0.2) 0%,
+        rgba(247, 94, 5, 0.2) 100%
+      );
+  }
+  // .subscription__wrap
+
+  &__wrap {
+    max-width: 500px;
+    max-width: 810px;
+    margin: 0 auto;
+    @include adaptive(tablet) {
+      width: 100%;
+    }
+  }
+
+  // .subscription__subtitle
+
+  &__subtitle {
+    margin-bottom: 60px;
+  }
+
+  // .subscription__form
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  // .subscription__inp
+
+  &__input {
+    width: 100%;
+    max-width: 422px;
+    padding: 13px 16px;
+    background-color: var(--bg-color-main);
+    border: 1px solid #d7dadd;
+    border-radius: 4px;
+    &:is(:hover, :focus) {
+      outline: 1px solid var(--accent-color);
+    }
+    &::placeholder {
+      line-height: 1.6;
+      color: #9a9ca5;
+    }
+  }
+}

@@ -122,21 +122,6 @@
     justify-self: start;
   }
 
-  // .card-courses__subtitle
-
-  &__subtitle {
-    // flex-grow: 1;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.3;
-    color: var(--titles-color);
-
-    @include adaptive(desktop) {
-      font-size: 20px;
-      line-height: 1.5;
-    }
-  }
-
   // .card-courses__details
 
   &__details {
@@ -176,5 +161,20 @@
       font-size: 16px;
       border-left: 1px solid var(--text-color-secondary);
     }
+  }
+}
+
+.scale-animated {
+  animation: scale-img 1000ms ease;
+}
+@keyframes scale-img {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  0% {
+    transform: scale(1);
   }
 }

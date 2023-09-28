@@ -48,6 +48,7 @@
     padding: 20px;
     background: var(--bg-color-main);
     border-radius: 4px;
+    transition: all 250ms ease;
     &:is(:hover, :focus) {
       box-shadow: 0px 80px 80px -20px rgba(255, 63, 58, 0.16),
         0px 30px 24px -10px rgba(255, 63, 58, 0.1),
@@ -102,14 +103,7 @@
 
   &__month,
   &__name {
-    font-weight: 700;
-    font-size: px;
-    line-height: 1.5;
     text-align: left;
-    color: var(--titles-color);
-    @include adaptive(desktop) {
-      font-size: 20px;
-    }
   }
 
   &__month {
@@ -137,11 +131,6 @@
 
   &__name {
     margin-bottom: 4px;
-  }
-
-  // .events-preview__type
-
-  &__type {
   }
 
   // .events-preview__button
@@ -188,14 +177,11 @@
   }
 }
 .decor-events-preview--1 {
-  position: absolute;
   left: 10px;
   bottom: 0px;
 }
-.decor6 {
-}
+
 .decor-events-preview--2 {
-  position: absolute;
   top: -142px;
   right: -62px;
 }

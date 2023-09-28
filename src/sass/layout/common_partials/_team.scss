@@ -105,7 +105,6 @@
 }
 
 .decor-team--1 {
-  position: absolute;
   top: 43px;
   left: 44px;
 
@@ -116,7 +115,6 @@
 }
 
 .decor-team--2 {
-  position: absolute;
   top: 143px;
   right: 105px;
   @include adaptive(tablet) {
@@ -126,7 +124,6 @@
 }
 
 .decor-team--3 {
-  position: absolute;
   bottom: 550px;
   right: -10px;
   @include adaptive(tablet) {
@@ -135,7 +132,6 @@
 }
 
 .decor-team--4 {
-  position: absolute;
   z-index: 2;
   bottom: -70px;
   left: 75px;

@@ -1,0 +1,82 @@
+.about-school {
+  padding: 260px 0 80px;
+  // .about-school__container
+  @include adaptive(tablet) {
+    padding: 260px 0 100px;
+  }
+  @include adaptive(desktop) {
+    padding: 160px 0 180px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    @include adaptive(tablet) {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    @include adaptive(desktop) {
+      justify-content: space-between;
+    }
+  }
+
+  // .about-school__box
+
+  &__box {
+    max-width: 100%;
+    @include adaptive(desktop) {
+      max-width: 600px;
+    }
+  }
+
+  // .about-school__subtitle
+
+  &__subtitle {
+    margin-bottom: 32px;
+    @include adaptive(tablet) {
+      margin-bottom: 48px;
+    }
+  }
+
+  // .about-school__main-info
+
+  &__main-info {
+    margin-bottom: 16px;
+  }
+
+  // .about-school__description
+
+  &__description {
+    margin-bottom: 40px;
+    @include adaptive(tablet) {
+      margin-bottom: 60px;
+    }
+  }
+
+  // .about-school__buttons
+
+  &__buttons {
+    text-align: center;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+    @include adaptive(tablet) {
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 0;
+    }
+  }
+
+  // .about-school__img
+
+  &__img {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+}

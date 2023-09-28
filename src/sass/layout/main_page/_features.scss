@@ -25,7 +25,6 @@
     @include adaptive(desktop) {
       gap: 30px;
       padding: 180px 0px;
-      flex-direction: row;
     }
   }
 
@@ -36,7 +35,7 @@
     padding-bottom: 74%;
     flex: 0 1 50%;
 
-    @include adaptive(desktop) {
+    @include adaptive(tablet) {
       flex: 0 1 57.3%;
       padding-bottom: 45.5%;
     }

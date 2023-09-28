@@ -68,13 +68,8 @@
   // .testimonials__text
 
   &__text {
-    font-size: 13px;
-    line-height: 1.5;
     text-align: left;
     margin-bottom: 24px;
-    @include adaptive(tablet) {
-      font-size: 16px;
-    }
   }
 
   // .testimonials__author
@@ -99,6 +94,7 @@
     line-height: 1.6;
     color: var(--titles-color);
     margin-bottom: 4px;
+    text-align: left;
   }
 
   // .testimonials__position
@@ -106,6 +102,7 @@
   &__position {
     font-size: 12px;
     line-height: 1.5;
+    text-align: left;
     color: var(--text-color-secondary);
     @include adaptive(tablet) {
       font-size: 14px;
@@ -152,7 +149,6 @@
 }
 
 .decor-testimonials--1 {
-  position: absolute;
   top: 50px;
   right: 0%;
   @include adaptive(tablet) {
@@ -161,7 +157,6 @@
 }
 
 .decor-testimonials--2 {
-  position: absolute;
   bottom: 0;
   left: 0;
   @include adaptive(tablet) {
@@ -171,7 +166,6 @@
 }
 
 .decor-testimonials--3 {
-  position: absolute;
   bottom: -100px;
   right: -100px;
 }

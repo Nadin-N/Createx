@@ -3,7 +3,7 @@ class NewsLetterForm {
     this.refs = {
       newsLetterForm: document.querySelector('.js-newsletter-form'),
       newsLetterFormMailInput: document.querySelector(
-        '.js-newsletter-form-input[name="email"]'
+        '.js-newsletter-form-input[name="newsEmail"]'
       ),
     };
 
