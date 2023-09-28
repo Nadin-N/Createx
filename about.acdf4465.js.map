@@ -1,0 +1,1 @@
+{"mappings":"gfAAAA,EAAA,S","sources":["src/about.js"],"sourcesContent":["import './js/common/header';\r\nimport './js/main_page/team-slider';\r\nimport './js/common/testimonials-slider';\r\nimport './js/common/footer';\r\n"],"names":["parcelRequire"],"version":3,"file":"about.acdf4465.js.map"}
