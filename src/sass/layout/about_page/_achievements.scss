@@ -1,15 +1,6 @@
 .achievements {
   position: relative;
-  background-image: var(--bg-color-main);
-  padding-bottom: 50px;
 
-  @include adaptive(tablet) {
-    padding-bottom: 120px;
-  }
-
-  @include adaptive(desktop) {
-    padding-bottom: 180px;
-  }
   // .achievements__container
 
   &__container {

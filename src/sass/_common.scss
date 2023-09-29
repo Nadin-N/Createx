@@ -160,6 +160,15 @@ button {
   gap: 8px;
 }
 
+//?--------------section --------------*/
+
+.section-paddings {
+  padding-bottom: 100px;
+  @include adaptive(desktop) {
+    padding-bottom: 180px;
+  }
+}
+
 //?--------------titles --------------*/
 
 [class*='title'] {
@@ -201,6 +210,27 @@ button {
   }
 }
 
+.titles {
+  margin-bottom: 40px;
+  @include adaptive(tablet) {
+    margin-bottom: 60px;
+  }
+}
+
+//?--------------text --------------*/
+.text {
+  font-size: 13px;
+  line-height: 1.3;
+  @include adaptive(desktop) {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+
+.text--light-grey {
+  color: var(--text-color-secondary);
+}
+
 //?--------------decor --------------*/
 
 [class*='decor-hero--'],
@@ -208,7 +238,8 @@ button {
 [class*='decor-events-preview--'],
 [class*='decor-team--'],
 [class*='decor-testimonials--'],
-[class*='decor-achievements--'] {
+[class*='decor-achievements--'],
+[class*='decor-studying--'] {
   position: absolute;
 }
 
@@ -285,6 +316,11 @@ button {
   background: url('../images/decor/decor-half-3circles-yellow.svg') 0 0
     no-repeat;
 }
+.decor14 {
+  width: 60px;
+  height: 60px;
+  background: url('../images/decor/decor-shapes-yellow.svg') 0 0 no-repeat;
+}
 
 //?--------------labels --------------*/
 
@@ -315,15 +351,8 @@ button {
 .label--pink {
   background-color: #f52f6e;
 }
-
-//?--------------text --------------*/
-.text {
-  font-size: 13px;
-  line-height: 1.3;
-  @include adaptive(desktop) {
-    font-size: 16px;
-    line-height: 1.6;
-  }
+.label--violet {
+  background-color: #7772f1;
 }
 
 /*?--------------buttons --------------*/

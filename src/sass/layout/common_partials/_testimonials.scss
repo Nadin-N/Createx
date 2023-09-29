@@ -15,15 +15,6 @@
     z-index: 2;
   }
 
-  // .testimonials__subtitle
-
-  &__subtitle {
-    margin-bottom: 30px;
-    @include adaptive(tablet) {
-      margin-bottom: 60px;
-    }
-  }
-
   // .testimonials__items
 
   &__items {

@@ -1,0 +1,139 @@
+.studying {
+  position: relative;
+  z-index: 2;
+
+  // .studying__box
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: -80px;
+
+    @include adaptive(tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0;
+    }
+    @include adaptive(desktop) {
+      align-items: end;
+    }
+  }
+
+  // .studying__titles
+
+  &__titles {
+    padding-bottom: 60px;
+    @include adaptive(desktop) {
+      padding-bottom: 0;
+    }
+  }
+
+  // .studying__list
+
+  &__list {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @include adaptive(mobile-large) {
+      max-width: 80%;
+    }
+    @include adaptive(tablet) {
+      max-width: 60%;
+    }
+    @include adaptive(desktop) {
+      gap: 32px;
+      max-width: 495px;
+    }
+  }
+
+  // .studying__list-item
+
+  &__list-item {
+    position: relative;
+    display: flex;
+    gap: 44px;
+    align-items: baseline;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: var(--accent-color);
+      flex-shrink: 0;
+    }
+    &::after {
+      content: '';
+      display: block;
+      width: 2px;
+      height: 100%;
+      background-color: var(--bg-color-primary);
+      position: absolute;
+      top: 18px;
+      left: 3px;
+      @include adaptive(tablet) {
+        top: 20px;
+      }
+      @include adaptive(desktop) {
+        top: 25px;
+      }
+    }
+    &:last-child::after {
+      height: 75%;
+    }
+  }
+
+  // .studying__step
+
+  &__step {
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: var(--text-color-secondary);
+  }
+
+  // .studying__small-subtitle
+
+  &__small-subtitle {
+    margin-bottom: 8px;
+  }
+
+  // .studying__img
+
+  &__img {
+    position: relative;
+    width: 100%;
+    padding-bottom: 120%;
+    @include adaptive(tablet) {
+      padding-bottom: 50.41%;
+      flex: 0 1 42%;
+    }
+  }
+
+  &__img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  // .studying__decor
+}
+
+.decor-studying--1 {
+  bottom: 0;
+  left: 0;
+}
+
+.decor-studying--2 {
+  z-index: 3;
+  top: -120px;
+  right: -120px;
+}

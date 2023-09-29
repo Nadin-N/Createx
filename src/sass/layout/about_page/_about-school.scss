@@ -1,9 +1,6 @@
 .about-school {
   padding: 260px 0 80px;
   // .about-school__container
-  @include adaptive(tablet) {
-    padding: 260px 0 100px;
-  }
   @include adaptive(desktop) {
     padding: 160px 0 180px;
   }

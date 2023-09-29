@@ -1,12 +1,4 @@
 .courses-preview {
-  margin-bottom: 40px;
-  @include adaptive(tablet) {
-    margin-bottom: 100px;
-  }
-  @include adaptive(desktop) {
-    margin-bottom: 180px;
-  }
-
   // .courses-preview__header
 
   &__header {

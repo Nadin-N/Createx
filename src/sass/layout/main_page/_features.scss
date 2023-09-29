@@ -14,17 +14,14 @@
     flex-direction: column;
     gap: 20px;
     justify-content: space-between;
-    padding: 50px 0px;
 
     @include adaptive(tablet) {
       flex-direction: row;
       align-items: center;
-      padding: 100px 0px;
     }
 
     @include adaptive(desktop) {
       gap: 30px;
-      padding: 180px 0px;
     }
   }
 

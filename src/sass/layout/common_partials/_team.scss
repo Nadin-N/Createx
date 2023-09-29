@@ -1,13 +1,10 @@
 .team {
   position: relative;
   background-color: var(--bg-color-primary);
-  padding: 80px 0px;
+  padding-top: 80px;
 
-  @include adaptive(tablet) {
-    padding: 50px 0px;
-  }
   @include adaptive(desktop) {
-    padding: 166px 0px;
+    padding-top: 166px;
   }
 
   // .team__container
