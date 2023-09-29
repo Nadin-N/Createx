@@ -1,0 +1,1 @@
+{"mappings":"gfAAAA,EAAA,S,iCAGA,C","sources":["src/about.js"],"sourcesContent":["import './js/common/header';\r\nimport './js/main_page/team-slider';\r\nimport './js/common/testimonials-slider';\r\nт;\r\nimport './js/common/footer';\r\n"],"names":["parcelRequire"],"version":3,"file":"about.32906d3c.js.map"}
