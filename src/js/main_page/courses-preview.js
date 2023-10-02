@@ -129,12 +129,19 @@ class ShowCards {
     //   newCardsArray.push(card);
     // });
     // const newCardsArray = Array.from(this.refs.coursesCards);
-    const newCardsArray = Array.from(this.refs.coursesCards);
-    console.log(newCardsArray);
+    // const newCardsArray = Array.from(this.refs.coursesCards);
+    // console.log(newCardsArray);
 
-    const newMark = String(newCardsArray.splice(3, 3).join(','));
-    console.log(newMark);
-    this.refs.coursesList.innerHTML = newMark;
+    // const newMark = this.refs.coursesCards.splice(3, 3).join(',');
+    // console.log(newMark);
+    // this.refs.coursesList.innerHTML = newMark;
+    // this.refs.coursesCards.forEach(card => )
+    for (let i = 3; i < this.refs.coursesCards.length; i += 1) {
+      // if (i > 2) {
+      console.log(this.refs.coursesCards[i]);
+      this.refs.coursesCards[i].classList.add('is-hidden');
+      // }
+    }
   }
 }
 

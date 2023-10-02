@@ -70,35 +70,6 @@
     margin-bottom: 38px;
   }
 
-  // .footer__icons-list
-
-  &__icons-list {
-    display: flex;
-    column-gap: 20px;
-  }
-
-  // .footer__icons-item
-
-  &__icons-item:is(:hover, :focus) {
-    & svg {
-      fill: var(--bg-color-main);
-      stroke: none;
-      opacity: 1;
-    }
-  }
-
-  // .footer__icon
-
-  &__icon {
-  }
-
-  // .footer__svg
-
-  &__svg {
-    fill: var(--bg-color-main);
-    opacity: 0.6;
-  }
-
   // .footer__column-title
 
   &__column-title {

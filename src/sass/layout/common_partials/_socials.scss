@@ -1,0 +1,46 @@
+.socials {
+  // .socials__icons-list
+
+  &__icons-list {
+    display: flex;
+    column-gap: 20px;
+  }
+
+  // .socials__icons-item
+
+  &__icons-item:is(:hover, :focus) {
+    & svg {
+      fill: var(--bg-color-main);
+      stroke: none;
+      opacity: 1;
+    }
+  }
+
+  // .socials__svg
+
+  &__svg {
+    fill: var(--bg-color-main);
+    opacity: 0.6;
+  }
+}
+
+div.contact-info__details > div.socials > ul.socials__icons-list {
+  column-gap: 20px;
+  @include adaptive(desktop) {
+    column-gap: 32px;
+  }
+}
+
+div.contact-info__details > div.socials > ul > li > a > svg {
+  fill: var(--text-color-secondary);
+}
+
+div.contact-info__details
+  > div.socials
+  > ul.socials__icons-list
+  > li.socials__icons-item:is(:hover, :focus) {
+  & svg {
+    fill: var(--accent-color);
+    stroke: none;
+  }
+}
