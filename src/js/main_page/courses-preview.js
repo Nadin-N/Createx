@@ -111,3 +111,31 @@ class AnimateCards {
 }
 
 new AnimateCards();
+
+class ShowCards {
+  constructor() {
+    this.refs = {
+      coursesList: document.querySelector('.courses-preview__box'),
+      coursesCards: document.querySelectorAll('.card-courses'),
+    };
+
+    this.showNthCards();
+  }
+
+  showNthCards() {
+    console.log(this.refs.coursesCards);
+    // const newCardsArray = [];
+    // this.refs.coursesCards.forEach(card => {
+    //   newCardsArray.push(card);
+    // });
+    // const newCardsArray = Array.from(this.refs.coursesCards);
+    const newCardsArray = Array.from(this.refs.coursesCards);
+    console.log(newCardsArray);
+
+    const newMark = String(newCardsArray.splice(3, 3).join(','));
+    console.log(newMark);
+    this.refs.coursesList.innerHTML = newMark;
+  }
+}
+
+// new ShowCards();

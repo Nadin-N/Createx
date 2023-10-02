@@ -1,0 +1,32 @@
+.employment {
+  position: relative;
+  background-color: var(--bg-color-primary);
+  padding: 80px 0;
+  text-align: center;
+
+  // .employment__list
+
+  &__list {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, 156px);
+    grid-auto-rows: 1fr;
+    justify-content: center;
+    @include adaptive(desktop) {
+      gap: 40px;
+    }
+  }
+
+  // .employment__item
+
+  &__item {
+    border: 1px solid var(--border-color-first);
+    transition: all 250ms ease;
+    &:is(:hover, :focus) {
+      box-shadow: 0px 4px 4px 4px rgba(30, 33, 44, 0.07),
+        0px 12px 10px -6px rgba(154, 156, 165, 0.09),
+        0px 30px 24px -10px rgba(154, 156, 165, 0.3),
+        0px 30px 30px -20px rgba(154, 156, 165, 0.4);
+    }
+  }
+}

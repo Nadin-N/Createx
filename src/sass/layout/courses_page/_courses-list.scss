@@ -1,0 +1,144 @@
+.courses-list {
+  position: relative;
+  padding: 260px 0 80px;
+  @include adaptive(desktop) {
+    padding: 160px 0 180px;
+  }
+
+  // .courses-list__titles
+
+  &__titles {
+    text-align: center;
+  }
+
+  // .courses-list__filter-controls
+
+  &__filter-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+
+  // .courses-list__control-buttons
+
+  &__control-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  // .courses-list__control-button-item
+
+  &__control-button-item {
+  }
+  // .courses-list__control-button
+
+  &__control-button {
+    padding: 10px 20px;
+    display: flex;
+    gap: 4px;
+  }
+
+  // .courses-list__button-name
+
+  &__button-name {
+  }
+
+  // .courses-list__button-quantity
+
+  &__button-quantity {
+    font-size: 10px;
+  }
+
+  // .courses-list__form
+
+  &__form {
+    display: flex;
+    align-items: center;
+  }
+
+  // .courses-list__search-input
+
+  &__search-input {
+  }
+
+  // .courses-list__search-button
+
+  &__search-button {
+  }
+
+  // .courses-list__svg
+
+  &__svg {
+  }
+
+  // .courses-list__box
+
+  &__box {
+  }
+
+  // .courses-list__card
+
+  &__card {
+  }
+
+  // .courses-list__decor
+}
+
+.card-courses {
+  // .card-courses__wrap
+
+  &__wrap {
+  }
+
+  // .card-courses__img
+
+  &__img {
+  }
+
+  // .card-courses__description
+
+  &__description {
+  }
+
+  // .card-courses__label
+
+  &__label {
+  }
+
+  // .card-courses__subtitle
+
+  &__subtitle {
+  }
+
+  // .card-courses__details
+
+  &__details {
+  }
+
+  // .card-courses__price
+
+  &__price {
+  }
+
+  // .card-courses__teacher
+
+  &__teacher {
+  }
+}
+.decor-courses-list--1 {
+  top: 150px;
+  right: -55px;
+  transform: rotate(60deg);
+}
+
+.decor-courses-list--2 {
+  top: 40%;
+  left: 20px;
+  transform: rotate(30deg);
+}
+
+.decor-courses-list--3 {
+  bottom: 40%;
+  right: 20px;
+}
