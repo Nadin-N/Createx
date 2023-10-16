@@ -1,0 +1,105 @@
+<section class="questions section-paddings">
+  <div class="questions__container">
+    <div class="questions__img">
+      <img
+        src="./images/contacts_page/questions/question-pic.svg"
+        alt="studying illustration"
+      />
+    </div>
+    <div class="questions__description">
+      <div class="questions__titles">
+        <h2 class="questions__title title-pattern">Any questions?</h2>
+        <h3 class="questions__subtitle subtitle-pattern">Drop us a line</h3>
+      </div>
+      <form class="questions__form js-questions-form" action="#">
+        <div class="questions__field double">
+          <label class="questions__label text"
+            >First Name*
+            <input
+              type="text"
+              name="firstName"
+              required
+              autocomplete="true"
+              placeholder="Your first name"
+              class="questions__input js-questions-form-input"
+              min="2"
+            />
+          </label>
+          <label class="questions__label text"
+            >Last Name*
+            <input
+              type="text"
+              name="lastName"
+              required
+              autocomplete="true"
+              placeholder="Your last name"
+              class="questions__input js-questions-form-input"
+              min="2"
+            />
+          </label>
+        </div>
+        <div class="questions__field double">
+          <label class="questions__label text"
+            >Email*
+            <input
+              type="email"
+              name="email"
+              required
+              autocomplete="true"
+              placeholder="Your working email"
+              class="questions__input js-questions-form-input"
+            />
+          </label>
+          <label class="questions__label text">
+            Phone
+            <input
+              type="tel"
+              name="phone"
+              required
+              placeholder="Your phone number"
+              class="questions__input js-questions-form-input"
+            />
+          </label>
+        </div>
+        <div class="questions__field">
+          <label class="questions__label-textarea text">
+            Message*
+            <textarea
+              class="questions__input js-questions-form-input"
+              name="message"
+              placeholder="Your message"
+            ></textarea>
+          </label>
+        </div>
+        <div class="questions__field double">
+          <div class="question__condition-wrap">
+            <input
+              type="checkbox"
+              id="questions-condition"
+              name="agreement"
+              required
+              value="yes"
+              class="questions__check is-hidden"
+            />
+            <label for="questions-condition" class="questions__check-label">
+              <span class="questions__icon-wrap">
+                <svg class="questions__check-icon" width="19" height="18">
+                  <use href="./images/svg-sprite.svg#check"></use>
+                </svg>
+              </span>
+              <span class="questions__condition text">
+                I agree to receive communications from Createx Online School
+              </span>
+            </label>
+          </div>
+          <button
+            type="submit"
+            class="button button--colored questions__button"
+          >
+            Send message
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
