@@ -1,1 +1,0 @@
-{"mappings":"gfAAAA,EAAA,S","sources":["src/contacts.js"],"sourcesContent":["import './js/common/header';\r\nimport './js/common/footer';\r\n"],"names":["parcelRequire"],"version":3,"file":"contacts.78e4fc9e.js.map"}
