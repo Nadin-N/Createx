@@ -11,55 +11,66 @@
         <h2 class="questions__title title-pattern">Any questions?</h2>
         <h3 class="questions__subtitle subtitle-pattern">Drop us a line</h3>
       </div>
-      <form class="questions__form js-questions-form" action="#">
+      <form class="questions__form js-questions-form">
         <div class="questions__field double">
-          <label class="questions__label text"
-            >First Name*
-            <input
-              type="text"
-              name="firstName"
-              required
-              autocomplete="true"
-              placeholder="Your first name"
-              class="questions__input js-questions-form-input"
-              min="2"
-            />
-          </label>
-          <label class="questions__label text"
-            >Last Name*
-            <input
-              type="text"
-              name="lastName"
-              required
-              autocomplete="true"
-              placeholder="Your last name"
-              class="questions__input js-questions-form-input"
-              min="2"
-            />
-          </label>
+          <div class="questions__input-wrap js-input-wrap">
+            <label class="questions__label text"
+              >First Name*
+              <input
+                type="text"
+                name="firstName"
+                required
+                autocomplete="true"
+                placeholder="Your first name"
+                class="questions__input js-questions-form-input"
+                min="2"
+              />
+            </label>
+            <p class="questions__error-message js-questions-error-message"></p>
+          </div>
+          <div class="questions__input-wrap js-input-wrap">
+            <label class="questions__label text"
+              >Last Name*
+              <input
+                type="text"
+                name="lastName"
+                required
+                autocomplete="true"
+                placeholder="Your last name"
+                class="questions__input js-questions-form-input"
+                min="2"
+              />
+            </label>
+            <p class="questions__error-message js-questions-error-message"></p>
+          </div>
         </div>
         <div class="questions__field double">
-          <label class="questions__label text"
-            >Email*
-            <input
-              type="email"
-              name="email"
-              required
-              autocomplete="true"
-              placeholder="Your working email"
-              class="questions__input js-questions-form-input"
-            />
-          </label>
-          <label class="questions__label text">
-            Phone
-            <input
-              type="tel"
-              name="phone"
-              required
-              placeholder="Your phone number"
-              class="questions__input js-questions-form-input"
-            />
-          </label>
+          <div class="questions__input-wrap js-input-wrap">
+            <label class="questions__label text"
+              >Email*
+              <input
+                type="email"
+                name="email"
+                required
+                autocomplete="true"
+                placeholder="Your working email"
+                class="questions__input js-questions-form-input"
+              />
+            </label>
+            <p class="questions__error-message js-questions-error-message"></p>
+          </div>
+          <div class="questions__input-wrap js-input-wrap">
+            <label class="questions__label text">
+              Phone in format: XXX-XXX-XX-XX
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Your phone number"
+                class="questions__input js-questions-form-input"
+              />
+            </label>
+            <p class="questions__error-message js-questions-error-message"></p>
+          </div>
         </div>
         <div class="questions__field">
           <label class="questions__label-textarea text">
@@ -67,6 +78,8 @@
             <textarea
               class="questions__input js-questions-form-input"
               name="message"
+              required
+              minlength="5"
               placeholder="Your message"
             ></textarea>
           </label>
@@ -94,7 +107,7 @@
           </div>
           <button
             type="submit"
-            class="button button--colored questions__button"
+            class="button button--colored questions__button js-questions-button"
           >
             Send message
           </button>

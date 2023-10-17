@@ -125,10 +125,6 @@
     color: var(--text-color-tertiary);
     opacity: 0.6;
 
-    .footer__svg {
-      fill: var(--accent-color);
-    }
-
     @include adaptive(mobile-large) {
       font-size: 12px;
     }
@@ -197,14 +193,12 @@
     padding: 9px 12px;
     color: var(--text-color-tertiary);
     opacity: 0.6;
+    border-radius: 4px;
     &::placeholder {
       font-size: 12px;
       line-height: 1.5;
       color: var(--text-color-tertiary);
       opacity: 0.6;
-    }
-    &:focus::placeholder {
-      opacity: 0;
     }
   }
 
@@ -218,4 +212,8 @@
     background: rgba(255, 255, 255, 0.001);
     padding: 9px 12px;
   }
+}
+
+svg.footer__svg {
+  fill: var(--bg-color-main);
 }

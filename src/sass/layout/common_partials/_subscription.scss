@@ -53,9 +53,7 @@
     background-color: var(--bg-color-main);
     border: 1px solid #d7dadd;
     border-radius: 4px;
-    &:is(:hover, :focus) {
-      outline: 1px solid var(--accent-color);
-    }
+
     &::placeholder {
       line-height: 1.6;
       color: #9a9ca5;

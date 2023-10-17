@@ -54,11 +54,15 @@ li svg:is(:hover, :focus) {
 
 .is-hidden {
   position: absolute;
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-  width: 0;
-  height: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 body.no-scroll {
@@ -74,6 +78,19 @@ body.no-scroll {
   background: rgba(0, 0, 0, 0.7);
   transition: opacity 250ms ease;
   overflow: auto;
+}
+
+[class*='__input '] {
+  transition: all 250ms ease;
+  &:is(:hover, :focus) {
+    border: 1px solid transparent;
+    outline: 1px solid var(--accent-color);
+  }
+  &:is(:focus) {
+    &::placeholder {
+      opacity: 0;
+    }
+  }
 }
 
 //? --------------links --------------
