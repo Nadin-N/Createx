@@ -1,0 +1,146 @@
+.process {
+  position: relative;
+  // .process__container
+
+  &__container {
+  }
+
+  // .process__titles
+
+  &__titles {
+    text-align: center;
+  }
+
+  // .process__list
+
+  &__list {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    @include adaptive(tablet) {
+      gap: 20px;
+      flex-wrap: nowrap;
+    }
+    @include adaptive(desktop) {
+      gap: 30px;
+    }
+  }
+
+  // .process__item
+
+  &__item {
+  }
+
+  // .process__number-box
+
+  &__number-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    @include adaptive(tablet) {
+      &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 5px;
+        border-bottom: 1px dashed var(--text-color-four);
+      }
+    }
+
+    @include adaptive(desktop) {
+      font-size: 46px;
+      margin-bottom: 16px;
+    }
+  }
+
+  // .process__number
+
+  &__number {
+    position: relative;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1.3;
+    color: var(--text-color-four);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    @include adaptive(tablet) {
+      left: -5%;
+    }
+
+    @include adaptive(desktop) {
+      font-size: 46px;
+      width: 70px;
+      height: 70px;
+      &::before {
+        content: '';
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+
+  &__number.number-animated {
+    color: var(--accent-color);
+    background-image: var(--bg-color-secondary);
+
+    &::before {
+      content: '';
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+      background-color: var(--accent-color);
+      opacity: 0.07;
+      transform: scale(1);
+      animation: pulse 1000ms infinite ease alternate-reverse;
+    }
+
+    &:hover::before {
+      animation-play-state: paused;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.5);
+      }
+    }
+
+    @include adaptive(desktop) {
+      &::before {
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+
+  // .process__name
+
+  &__name {
+    margin-bottom: 8px;
+    @include adaptive(tablet) {
+      min-height: 40px;
+    }
+  }
+
+  // .process__text
+
+  &__text {
+  }
+}
+
+.decor-process--1 {
+  top: 0;
+  right: 50px;
+}

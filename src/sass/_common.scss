@@ -83,7 +83,6 @@ body.no-scroll {
 [class*='__input '] {
   transition: all 250ms ease;
   &:is(:hover, :focus) {
-    border: 1px solid transparent;
     outline: 1px solid var(--accent-color);
   }
   &:is(:focus) {
@@ -250,6 +249,37 @@ button {
   color: var(--text-color-secondary);
 }
 
+//?--------------list --------------*/
+.check-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  line-height: 1.4;
+  @include adaptive(desktop) {
+    line-height: 1.6;
+  }
+}
+
+.check-item {
+  display: flex;
+  gap: 16px;
+  font-size: 13px;
+  @include adaptive(desktop) {
+    font-size: 16px;
+  }
+}
+
+.check-item::before {
+  content: '';
+  flex: 0 0 16px;
+  width: 16px;
+  min-height: 16px;
+  background: url('../images/decor/check.svg') 0 2px no-repeat;
+  @include adaptive(desktop) {
+    background: url('../images/decor/check.svg') 0 6px no-repeat;
+  }
+}
+
 //?--------------decor --------------*/
 
 [class*='decor-hero--'],
@@ -259,7 +289,10 @@ button {
 [class*='decor-testimonials--'],
 [class*='decor-achievements--'],
 [class*='decor-studying--'],
-[class*='decor-courses-list--'] {
+[class*='decor-courses-list--'],
+[class*='decor-course-title--'],
+[class*='decor-course-curator--'],
+[class*='decor-process--'] {
   position: absolute;
 }
 
@@ -340,6 +373,11 @@ button {
   width: 60px;
   height: 60px;
   background: url('../images/decor/decor-shapes-yellow.svg') 0 0 no-repeat;
+}
+.decor15 {
+  width: 120px;
+  height: 120px;
+  background: url('../images/decor/decor-4arrows-yellow.svg') 0 0 no-repeat;
 }
 
 //?--------------labels --------------*/

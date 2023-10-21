@@ -56,6 +56,9 @@
     &:hover::after {
       animation-play-state: paused;
     }
+    &:hover svg {
+      fill: var(--bg-color-main);
+    }
 
     @keyframes shine {
       0% {
@@ -96,12 +99,6 @@
     position: relative;
     padding-bottom: 40.65%;
     flex-basis: 66%;
-
-    @include adaptive(desktop) {
-      // flex: 0 1 57.3%;
-      // padding-bottom: 45.5%;
-      // padding-bottom: 0%;
-    }
   }
 
   &__img img {

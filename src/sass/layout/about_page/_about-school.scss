@@ -4,27 +4,27 @@
     padding: 160px 0 180px;
   }
 
-  &__container {
+  &__wrap {
     display: flex;
     flex-direction: column;
     gap: 30px;
 
     @include adaptive(tablet) {
       flex-direction: row;
-      justify-content: center;
-      align-items: center;
-    }
-    @include adaptive(desktop) {
+      gap: 15px;
       justify-content: space-between;
+      align-items: center;
     }
   }
 
   // .about-school__box
 
   &__box {
-    max-width: 100%;
+    @include adaptive(tablet) {
+      flex-basis: 57%;
+    }
     @include adaptive(desktop) {
-      max-width: 600px;
+      flex-basis: 48.78%;
     }
   }
 
@@ -62,6 +62,7 @@
     margin-bottom: 30px;
 
     @include adaptive(tablet) {
+      gap: 24px;
       flex-direction: row;
       align-items: center;
       flex-wrap: wrap;
@@ -72,7 +73,20 @@
   // .about-school__img
 
   &__img {
-    max-width: 450px;
-    margin: 0 auto;
+    position: relative;
+    flex-basis: 37.8%;
+    padding-bottom: 88%;
+    @include adaptive(tablet) {
+      padding-bottom: 32.52%;
+    }
+  }
+
+  &__img img {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }

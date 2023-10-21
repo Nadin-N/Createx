@@ -24,6 +24,8 @@
   }
 }
 
+// contact-info
+
 div.contact-info__details > div.socials > ul.socials__icons-list {
   column-gap: 20px;
   @include adaptive(desktop) {
@@ -36,6 +38,29 @@ div.contact-info__details > div.socials > ul > li > a > svg {
 }
 
 div.contact-info__details
+  > div.socials
+  > ul.socials__icons-list
+  > li.socials__icons-item:is(:hover, :focus) {
+  & svg {
+    fill: var(--accent-color);
+    stroke: none;
+  }
+}
+
+//course-curator
+
+div.course-curator__info > div.socials > ul.socials__icons-list {
+  column-gap: 18px;
+  @include adaptive(desktop) {
+    column-gap: 24px;
+  }
+}
+
+div.course-curator__info > div.socials > ul > li > a > svg {
+  fill: var(--text-color-secondary);
+}
+
+div.course-curator__info
   > div.socials
   > ul.socials__icons-list
   > li.socials__icons-item:is(:hover, :focus) {

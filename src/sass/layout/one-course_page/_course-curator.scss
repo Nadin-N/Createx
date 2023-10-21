@@ -1,0 +1,131 @@
+.course-curator {
+  position: relative;
+  // .cour
+  // .course-curator__box
+
+  &__box {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    @include adaptive(mobile-large) {
+      gap: 80px;
+    }
+    @include adaptive(tablet) {
+      flex-direction: row;
+      gap: 15px;
+      justify-content: space-between;
+      align-items: center;
+    }
+    @include adaptive(desktop) {
+      align-items: start;
+    }
+  }
+
+  &__wrap {
+    order: 1;
+    @include adaptive(tablet) {
+      flex-basis: 40.24%;
+      order: 0;
+    }
+  }
+
+  // .course-curator__img
+
+  &__img {
+    position: relative;
+    padding-bottom: 91%;
+    max-width: 495px;
+    margin: 0 auto;
+    background-color: var(--bg-picture);
+    @include adaptive(tablet) {
+      padding-bottom: 115%;
+    }
+  }
+
+  &__img img {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 92.7%;
+    height: 105%;
+    object-fit: contain;
+    overflow: visible;
+    @include adaptive(tablet) {
+      height: 100%;
+      object-fit: cover;
+      bottom: 2.7%;
+    }
+  }
+
+  // .course-curator__info
+
+  &__info {
+    flex-basis: 52%;
+    @include adaptive(desktop) {
+      flex-basis: 48.78%;
+    }
+  }
+
+  // .course-curator__subtitle
+
+  &__subtitle {
+    margin-bottom: 12px;
+    @include adaptive(desktop) {
+      margin-bottom: 16px;
+    }
+  }
+
+  // .course-curator__position
+
+  &__position {
+    font-size: 16px;
+    margin-bottom: 12px;
+    @include adaptive(desktop) {
+      font-size: 20px;
+      margin-bottom: 24px;
+    }
+  }
+
+  // .course-curator__achievement-list
+
+  &__achievement-list {
+    margin-bottom: 16px;
+    @include adaptive(desktop) {
+      margin-bottom: 32px;
+    }
+  }
+
+  // .course-curator__achievement-item
+
+  &__achievement-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.6;
+  }
+
+  // .course-curator__achievement-icon
+
+  &__achievement-icon {
+    margin-right: 4px;
+    fill: var(--accent-color);
+  }
+
+  // .course-curator__description
+
+  &__description {
+    margin-bottom: 20px;
+    @include adaptive(desktop) {
+      margin-bottom: 40px;
+    }
+  }
+}
+.decor-course-curator--1 {
+  top: -86px;
+  left: 1%;
+}

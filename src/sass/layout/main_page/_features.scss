@@ -91,44 +91,6 @@
       margin-bottom: 48px;
     }
   }
-
-  &__list-item {
-    line-height: 1.4;
-    @include adaptive(desktop) {
-      line-height: 1.6;
-    }
-  }
-
-  // .features__button
-
-  &__button {
-  }
-}
-
-.check-list {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.check-item {
-  display: flex;
-  gap: 16px;
-  font-size: 13px;
-  @include adaptive(desktop) {
-    font-size: 16px;
-  }
-}
-
-.check-item::before {
-  content: '';
-  flex: 0 0 16px;
-  width: 16px;
-  min-height: 16px;
-  background: url('../images/decor/check.svg') 0 2px no-repeat;
-  @include adaptive(desktop) {
-    background: url('../images/decor/check.svg') 0 6px no-repeat;
-  }
 }
 
 .decor-features--1 {
