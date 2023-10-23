@@ -1,0 +1,47 @@
+.audience {
+  position: relative;
+  // .audience__box
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @include adaptive(tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  // .audience__titles
+
+  &__titles {
+    flex-basis: 40%;
+  }
+
+  // .audience__list
+
+  &__list {
+    flex-basis: 48.78%;
+    gap: 12px;
+    @include adaptive(desktop) {
+      gap: 20px;
+    }
+  }
+
+  // .audience__list-item
+
+  &__list-item {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.5;
+    @include adaptive(desktop) {
+      font-size: 20px;
+    }
+  }
+}
+
+.decor-audience--1 {
+  bottom: 50px;
+  transform: rotate(145deg);
+  left: 40px;
+}

@@ -1,0 +1,146 @@
+.program {
+  // .program__container
+
+  &__container {
+  }
+
+  // .program__box
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    @include adaptive(tablet) {
+      flex-direction: row;
+      gap: 20px;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  // .program__info
+
+  &__info {
+    flex-basis: 48.78%;
+  }
+
+  // .program__titles
+
+  &__titles {
+  }
+
+  // .program__title
+
+  &__title {
+  }
+
+  // .program__subtitle
+
+  &__subtitle {
+  }
+
+  // .program__list
+
+  &__list {
+    margin-bottom: 50px;
+    @include adaptive(desktop) {
+      margin-bottom: 0;
+    }
+  }
+
+  // .program__list-item
+
+  &__list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 16px;
+
+    @include adaptive(desktop) {
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+  }
+
+  // .program__list-button
+
+  &__list-button svg {
+    fill: var(--accent-color);
+  }
+  &__list-button {
+    padding-top: 2px;
+    @include adaptive(desktop) {
+      padding-top: 8px;
+    }
+  }
+
+  // .program__svg-plus
+
+  &__svg-plus {
+  }
+
+  // .program__svg-minus
+
+  &__svg-minus {
+  }
+
+  // .program__lesson-wrap
+
+  &__lesson-wrap {
+  }
+
+  // .program__lesson-title
+
+  &__lesson-title {
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 700;
+    margin-bottom: 12px;
+    @include adaptive(desktop) {
+      font-size: 20px;
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+  }
+
+  // .program__lesson-number
+
+  &__lesson-number {
+    font-weight: 400;
+    color: var(--accent-color);
+  }
+
+  // .program__lesson-about
+
+  &__lesson-about {
+  }
+
+  // .program__img
+
+  &__img {
+    position: relative;
+    padding-bottom: 110%;
+    width: 100%;
+    margin: 0 auto;
+    @media (min-width: 600px) {
+      width: 495px;
+    }
+    @media (min-width: 665px) {
+      padding-bottom: 86%;
+    }
+    @include adaptive(tablet) {
+      flex-basis: 40.24%;
+      padding-bottom: 45.04%;
+    }
+  }
+
+  &__img img {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    @include adaptive(tablet) {
+    }
+  }
+}

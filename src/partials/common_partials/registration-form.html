@@ -1,0 +1,55 @@
+<form class="registration-form js-registration-form">
+  <div class="registration-form__input-wrap js-input-wrap">
+    <label class="registration-form__label text"
+      >Full name
+      <input
+        type="text"
+        name="fullName"
+        required
+        autocomplete="true"
+        placeholder="Your full name"
+        class="registration-form__input js-registration-form-input"
+        min="2"
+      />
+    </label>
+    <p
+      class="registration-form__error-message js-registration-form-error-message"
+    ></p>
+  </div>
+  <div class="registration-form__input-wrap js-input-wrap">
+    <label class="registration-form__label text"
+      >Email
+      <input
+        type="email"
+        name="email"
+        required
+        autocomplete="true"
+        placeholder="Your working email"
+        class="registration-form__input js-discount-form-input"
+      />
+    </label>
+    <p
+      class="registration-form__error-message js-registration-form-error-message"
+    ></p>
+  </div>
+  <div class="registration-form__input-wrap js-input-wrap">
+    <label class="registration-form__label text">
+      Phone in format: XXX-XXX-XX-XX
+      <input
+        type="tel"
+        name="phone"
+        placeholder="Your phone number"
+        class="registration-form__input js-discount-form-input"
+      />
+    </label>
+    <p
+      class="registration-form__error-message js-registration-form-error-message"
+    ></p>
+  </div>
+  <button
+    type="submit"
+    class="button button--colored registration-form__button js-registration-form-button"
+  >
+    Join the course
+  </button>
+</form>

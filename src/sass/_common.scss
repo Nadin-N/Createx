@@ -83,7 +83,8 @@ body.no-scroll {
 [class*='__input '] {
   transition: all 250ms ease;
   &:is(:hover, :focus) {
-    outline: 1px solid var(--accent-color);
+    border: 1px solid var(--accent-color);
+    outline: none;
   }
   &:is(:focus) {
     &::placeholder {
@@ -292,7 +293,9 @@ button {
 [class*='decor-courses-list--'],
 [class*='decor-course-title--'],
 [class*='decor-course-curator--'],
-[class*='decor-process--'] {
+[class*='decor-process--'],
+[class*='decor-discount--'],
+[class*='decor-audience--'] {
   position: absolute;
 }
 
@@ -378,6 +381,11 @@ button {
   width: 120px;
   height: 120px;
   background: url('../images/decor/decor-4arrows-yellow.svg') 0 0 no-repeat;
+}
+.decor16 {
+  width: 258px;
+  height: 258px;
+  background: url('../images/decor/decor-2circles-white.svg') 0 0 no-repeat;
 }
 
 //?--------------labels --------------*/
